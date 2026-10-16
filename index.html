@@ -128,7 +128,7 @@ disabled in development builds.</p>
 
 <h2>Where your data goes</h2>
 <table>
-  <tr><th>Processor</th><th>What they receive</th><th>Why</th></tr>
+  <tr><th>Service or recipient</th><th>What they receive</th><th>Why</th></tr>
   <tr><td>Google Firebase (Auth, Firestore, Storage, Cloud Messaging, Crashlytics, Analytics)</td>
       <td>Account details, list and order contents, shop photos, notification tokens, crash and usage data</td>
       <td>Stores your lists and orders, keeps them in sync, and delivers notifications</td></tr>
@@ -137,39 +137,50 @@ disabled in development builds.</p>
   <tr><td>A shop you send your list to</td>
       <td>Your display name, the items on that list, and the location your phone
           reported when you sent it (shown to the shop as a distance). If you choose
-          delivery and the shop accepts, also the delivery address you picked. Never
-          your email address, and never your phone number.</td>
+          delivery and the shop accepts, also the delivery address you picked. Payment
+          choices, references, bill snapshots and recorded payment status are also shared.
+          Never your email address, and never your phone number.</td>
       <td>So they can tell you what they have and, for a delivery order, bring it to you</td></tr>
+  <tr><td>A UPI app you choose to open, and its payment providers</td>
+      <td>The shop’s UPI ID and payee name, bill amount, currency, payment reference
+          and payment note</td>
+      <td>To prefill your direct payment to the shop. The payment app’s own terms
+          and privacy policy govern its processing.</td></tr>
 </table>
 <p>A shop is an independent business, not a processor acting for us. Nothing reaches
-one until you choose to send it your list, and what goes is only what is listed
-above.</p>
+one until you choose to send it your list. Order and payment details are shared
+with that shop as described above.</p>
 
 <h3>What does not leave your device</h3>
 <p>QR codes are generated on your phone. BigShopR does not record audio, does not use
-your microphone, and sends nothing to any service other than the processors named
-above.</p>
+your microphone. The app sends data to the services and recipients described
+in this policy, including a UPI app when you choose to open it.</p>
 
-<h2>Your rights under the DPDP Act, 2023</h2>
-<p>India's Digital Personal Data Protection Act gives you the right to:</p>
+<h2>Your data choices and rights</h2>
+<p>You can contact us to request the following, subject to identity verification
+and applicable legal exceptions:</p>
 <ul>
   <li>Access a summary of the personal data we process about you</li>
   <li>Correct, complete, update or erase your personal data</li>
   <li>Nominate another person to exercise these rights if you are incapacitated</li>
   <li>Withdraw consent at any time</li>
-  <li>Raise a grievance with us, and escalate to the Data Protection Board of India
-      if you are not satisfied with our response</li>
+  <li>Raise a grievance with us</li>
 </ul>
 <p>To exercise any of these, email
 <a href="mailto:contact@bigshopr.com">contact@bigshopr.com</a>. We aim to respond within
-30 days. Sreekumar Sasidharan is the point of contact for all data questions.</p>
+30 days. Sreekumar Sasidharan is the point of contact for all data questions.
+Withdrawal of consent may mean we can no longer provide features that depend on
+that processing. India’s Digital Personal Data Protection Act, 2023 has a phased
+commencement. We offer the request process above now; statutory rights and routes
+to the Data Protection Board apply as the relevant provisions take effect. Nothing
+in this policy limits rights available to you under applicable law.</p>
 
 <h2>How long we keep it</h2>
 <table>
   <tr><td>Lists and items</td><td>Until you or another member deletes them, or the list is deleted</td></tr>
   <tr><td>Purchase history</td><td>Until the list is deleted</td></tr>
   <tr><td>Account</td><td>Until you delete your account</td></tr>
-  <tr><td>Orders you sent to a shop</td><td>Kept as a record of the transaction for the household and the shop. They are deleted with a list you delete, and are not removed when you delete your account while other people still share the list or the shop still has them.</td></tr>
+  <tr><td>Orders you sent to a shop</td><td>Kept as a record of the transaction for the household and the shop. They and their payment records are deleted when the list is deleted. If you delete your account but the list remains shared, its orders and payment records remain accessible to the remaining members and the shop; account deletion does not erase those shared records.</td></tr>
   <tr><td>Notification tokens</td><td>Until you sign out of the app on that phone</td></tr>
   <tr><td>Problem reports</td><td>Until we have dealt with them; ask us to delete yours at any time</td></tr>
   <tr><td>Crash and analytics data</td><td>Per Firebase's retention defaults</td></tr>
@@ -178,16 +189,20 @@ above.</p>
 <p><strong>Deleting your account</strong> removes your profile and your membership of
 every list. Items you added to a <em>shared</em> list remain on that list, because
 other members rely on them and they are no longer solely yours — they will show as
-added by a removed member.</p>
+added by a removed member. Shared records may retain account identifiers;
+deleting your profile does not make every retained record anonymous. Shop account
+deletion can be blocked by open orders or unresolved payments. Contact us if you
+cannot complete deletion; see <a href="https://bigshopr.github.io/bigshopr/delete-account.html">deletion guidance</a>.</p>
 
 <h2>International transfers</h2>
 <p>Firebase stores data on Google Cloud infrastructure, which may be outside India.
 Google Cloud operates under contractual safeguards for such transfers.</p>
 
 <h2>Children</h2>
-<p>BigShopR is not directed at children under 18, and under the DPDP Act we do not
-knowingly process a child's personal data without verifiable parental consent. If you
-believe a child has given us data, contact us and we will delete it.</p>
+<p>BigShopR is intended only for people aged 18 and over. We do not offer accounts
+for children or a parental-consent registration process. If you believe someone
+under 18 has given us personal data, contact us so we can investigate and arrange
+deletion as appropriate.</p>
 
 <h2>Security</h2>
 <ul>
